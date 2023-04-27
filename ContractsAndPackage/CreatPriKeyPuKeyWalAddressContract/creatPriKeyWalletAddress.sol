@@ -22,7 +22,7 @@ contract PrivateKeyGenerator {
         bytes32 hash = keccak256(abi.encodePacked(publicKey));
         address walletAddress = address(uint160(uint256(hash)));
         return walletAddress;
-    }
+    }   
 
 }
 
